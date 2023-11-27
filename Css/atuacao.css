@@ -1,8 +1,8 @@
-.servicos-bg {
+.atuacao-bg {
     background-color: #fff;
 }
 
-.servicos {
+.atuacao {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
