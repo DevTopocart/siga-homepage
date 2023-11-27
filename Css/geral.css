@@ -26,21 +26,3 @@ ul {
 li, a {
     text-decoration: none;
 }
-
-.iza {
-    height: 700px;
-    width: 300px;
-    background-color: brown;
-}
-
-.iza2 {
-    height: 700px;
-    width: 300px;
-    background-color:aqua
-}
-
-.iza3 {
-    height: 700px;
-    width: 300px;
-    background-color:blue
-}

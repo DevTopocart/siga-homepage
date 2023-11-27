@@ -1,0 +1,12 @@
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.sobre p {
+    font-size: 17px;
+}
