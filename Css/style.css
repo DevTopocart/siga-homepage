@@ -1,5 +1,8 @@
-@import './geral.css';
-@import './header.css';
-@import './paginainicial.css';
-@import './sobre.css';
-@import './atuacao.css';
+@import "./geral.css";
+@import "./header.css";
+@import "./paginainicial.css";
+@import "./sobre.css";
+@import "./atuacao.css";
+@import "./servicos.css";
+@import "./corpo-tecnico.css";
+@import "./footer.css";

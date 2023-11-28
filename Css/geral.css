@@ -1,28 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
-body, h1, h2, ul, li, p, dd, dt, dl {
-    margin: 0px;
-    padding: 0px;
+body,
+h1,
+h2,
+ul,
+li,
+p,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background: url('../Assets/background.png') center center no-repeat fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    font-family: 'Poppins', sans-serif;
-}
-  
-img {
-    display: block;
-    max-width: 100%;
-}
-  
-ul {
-    list-style: none;
+  background: url("../Assets/background.png") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
 }
 
-li, a {
-    text-decoration: none;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+.clickable {
+  cursor: pointer;
 }

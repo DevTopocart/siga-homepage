@@ -1,0 +1,21 @@
+.corpo-tecnico {
+  background: radial-gradient(
+    266.65% 171.19% at 100.94% 100.88%,
+    rgba(8, 38, 49, 0.8) 0%,
+    rgba(238, 202, 169, 0.8) 89.4%,
+    rgba(8, 38, 49, 0) 100%
+  );
+  height: 1024px;
+}
+
+.titulo-corpo-tecnico {
+  font-family: Poppins;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 35px;
+  padding-top: 50px;
+  letter-spacing: 1.25px;
+  text-align: center;
+  color: #ffffff;
+  user-select: none;
+}
