@@ -1,0 +1,39 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.logo-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+nav {
+  background-color: #2093b5;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 0.5em;
+  margin: 0px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
