@@ -1,34 +1,33 @@
 .novidades {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .h1-novidades {
-    padding: 20px;
-    font-size: 37px;
-    text-align: center;
-    color: #ffffff;
-    margin: 20px;
+  padding: 20px;
+  font-size: 37px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px;
 }
 
 .h2-novidades {
-    padding: 20px;
-    font-size: 15px;
-    text-align: center;
-    color: #ffffff;
-    margin: 20px;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px;
 }
 
 .a-novidades {
-    margin: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 40px;
-    border-radius: 5px;
-    background: #2093B5;
-    margin-bottom: 60px;
+  margin: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 5px;
+  background: #2093b5;
+  margin-bottom: 60px;
 }

@@ -14,6 +14,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: #2093b5;
+  z-index: 9;
 }
 
 nav ul {
@@ -51,4 +52,3 @@ nav ul li a:hover {
 .sticky + .content {
   padding-top: 60px;
 }
-
