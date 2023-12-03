@@ -49,6 +49,8 @@
 }
 
 .img-container img {
+    max-width: 160px;
+    max-height: 160px;
     border-radius: 170px;
     padding: 5px;
 }
