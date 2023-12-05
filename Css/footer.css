@@ -5,42 +5,48 @@ footer {
 }
 
 .banner-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 
-.banner-footer .logo-footer {
-  grid-column: 2;
+.logo-footer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner-footer .strings {
-  grid-column: 3;
+.strings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 90%;
 }
 
-.banner-footer .strings .string-container {
+.strings .string-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 
-.banner-footer .strings .string-container p {
+.strings .string-container p {
   font-size: 18px;
   font-weight: 600;
   line-height: 35px;
   letter-spacing: 1.25px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: small;
+  }
 }
 
-.banner-footer .strings .string-container .icon {
+.strings .string-container .icon {
   margin-right: 10px;
 }

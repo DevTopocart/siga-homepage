@@ -1,11 +1,16 @@
 .sobre {
+  min-height: 100vh;
+}
+
+.sobre-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 1100px;
+  max-width: 90%;
   margin: 20px auto;
   text-align: center;
   padding: 15px;
+  padding-top: 100px;
 }
 
 .sobre p {

@@ -12,18 +12,18 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div class="logo-header">
           <img src="Assets/logo-siga-azul.svg" alt="Logo" />
         </div>
         <nav id="navbar">
           <ul>
-            <li><a href="#paginainicial">Página Inicial</a></li>
+            <li><a href="#header">Página Inicial</a></li>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#atuacao">Serviços</a></li>
+            <li><a href="#painel-de-servicos">Serviços</a></li>
             <li><a href="#corpotecnico">Corpo Técnico</a></li>
-            <li><a href="#sigweb">SIGWeb</a></li>
+            <li><a target="_blank" href="https://siga.angra.rj.gov.br/siga/">SIGWeb</a></li>
           </ul>
         </nav>
       </div>
@@ -35,7 +35,7 @@
           <img src="./Assets/logo-siga-branco.svg" alt="Banner" />
         </div>
         <h2>Uma nova maneira de pensar a cidade</h2>
-        <h4>Conheça o siga</h4>
+        <!-- <a href="#sobre"><h4>Conheça o siga</h4></a> -->
       </div>
 
       <div class="barrasuperior-bg">
@@ -66,133 +66,136 @@
       </div>
     </section>
 
-    <section class="sobre" id="sobre" data-anime="scroll">
-      <p>
-        O SIGA é uma plataforma do minicípio de Angra dos Reis que reúne dados
-        geográficos de diversos órgãos das esferas minucipal, estudal e federal,
-        criando uma base cartográfica densa e atualizada do território de Angra.
-        Aqui, você pode conhecer melhor a cidade, saber onde ficam os serviços
-        públicos, participar da gestão municipal e fiscalizar as obras e os
-        investimentos públicos.
-      </p>
-
-      <p>
-        O SIGA tem uma relação clara com a cidadania, pois tem o objetivo de se
-        tornar uma ferramenta usada no dia a dia por todos os moradores da
-        cidade. O site permite que o cidadão saiba diversas informações
-        práticas, como os nomes reais das ruas, os zoneamentos urbanos, os tipos
-        de construçã que pode fazer em seu lote, os detalhes do território que
-        habita e a localização de escolas, unidades de saúde, escolas e CRAS em
-        seu bairro. O site também disponibiliza para download uma base
-        cartográfica do minucípio em alta resolução com muitos detalhes e
-        informações territoriais essenciais para o exercício pleno da cidadania.
-      </p>
+    <section id="sobre" class="sobre">
+      <section class="sobre-container"  data-anime="scroll">
+        <p>
+          O SIGA é uma plataforma do minicípio de Angra dos Reis que reúne dados
+          geográficos de diversos órgãos das esferas municipal, estadual e federal,
+          criando uma base cartográfica densa e atualizada do território de Angra.
+          Aqui, você pode conhecer melhor a cidade, saber onde ficam os serviços
+          públicos, participar da gestão municipal e fiscalizar as obras e os
+          investimentos públicos.
+        </p>
+  
+        <p>
+          O SIGA tem uma relação clara com a cidadania, pois tem o objetivo de se
+          tornar uma ferramenta usada no dia a dia por todos os moradores da
+          cidade. O site permite que o cidadão saiba diversas informações
+          práticas, como os nomes reais das ruas, os zoneamentos urbanos, os tipos
+          de construçã que pode fazer em seu lote, os detalhes do território que
+          habita e a localização de escolas, unidades de saúde, escolas e CRAS em
+          seu bairro. O site também disponibiliza para download uma base
+          cartográfica do minucípio em alta resolução com muitos detalhes e
+          informações territoriais essenciais para o exercício pleno da cidadania.
+        </p>
+      </section>
+  
+      <section id="atuacao" class="atuacao-bg">
+        <aside class="atuacao">
+          <h2 class="titulo-atuacao">Áreas de Atuação</h2>
+  
+          <div class="areas-container">
+            <div class="areas-atuacao">
+              <img src="./Assets/agricultura.png" alt="Imagem 3" />
+              <p>AGRICULTURA</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/defesa-civil.png" alt="Imagem 3" />
+              <p>DEFESA CIVIL</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/desenvolvimento-social.png" alt="Imagem 3" />
+              <p>DESENVOLVIMENTO <br>SOCIAL</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/cultura.png" alt="Imagem 3" />
+              <p>CULTURA</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/esporte.png" alt="Imagem 3" />
+              <p>ESPORTES</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/meio-ambiente.png" alt="Imagem 3" />
+              <p>MEIO AMBIENTE</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/infraestrutura.png" alt="Imagem 3" />
+              <p>INFRAESTRUTURA</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/obras-publicas.png" alt="Imagem 3" />
+              <p>OBRAS PÚBLICAS</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/transito.png" alt="Imagem 3" />
+              <p>TRÂNSITO</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/desenvolvimento-economico.png" alt="Imagem 3" />
+              <p>DESENVOLVIMENTO <br>ECONÔMICO</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/territorio.png" alt="Imagem 3" />
+              <p>TERRITÓRIO <br>E MALHA URBANA</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/educacao.png" alt="Imagem 3" />
+              <p>EDUCAÇÃO</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/governo.png" alt="Imagem 3" />
+              <p>GOVERNO MUNICIPAL</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/saude.png" alt="Imagem 3" />
+              <p>SAÚDE</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/cartografia.png" alt="Imagem 3" />
+              <p>CARTOGRAFIA</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/turismo.png" alt="Imagem 3" />
+              <p>TURISMO</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/populacao.png" alt="Imagem 3" />
+              <p>POPULAÇÃO</p>
+            </div>
+  
+            <div class="areas-atuacao">
+              <img src="./Assets/mobilidade-urbana.png" alt="Imagem 3" />
+              <p>MOBILIDADE URBANA</p>
+            </div>
+          </div>
+        </aside>
+      </section>
     </section>
 
-    <section id="atuacao" class="atuacao-bg">
-      <aside class="atuacao">
-        <h2 class="titulo-atuacao">Áreas de Atuação</h2>
 
-        <div class="areas-container">
-          <div class="areas-atuacao">
-            <img src="./Assets/agricultura.png" alt="Imagem 3" />
-            <p>AGRICULTURA</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/defesa-civil.png" alt="Imagem 3" />
-            <p>DEFESA CIVIL</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/desenvolvimento-social.png" alt="Imagem 3" />
-            <p>DESENVOLVIMENTO <br>SOCIAL</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/cultura.png" alt="Imagem 3" />
-            <p>CULTURA</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/esporte.png" alt="Imagem 3" />
-            <p>ESPORTES</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/meio-ambiente.png" alt="Imagem 3" />
-            <p>MEIO AMBIENTE</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/infraestrutura.png" alt="Imagem 3" />
-            <p>INFRAESTRUTURA</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/obras-publicas.png" alt="Imagem 3" />
-            <p>OBRAS PÚBLICAS</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/transito.png" alt="Imagem 3" />
-            <p>TRÂNSITO</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/desenvolvimento-economico.png" alt="Imagem 3" />
-            <p>DESENVOLVIMENTO <br>ECONÔMICO</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/territorio.png" alt="Imagem 3" />
-            <p>TERRITÓRIO <br>E MALHA URBANA</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/educacao.png" alt="Imagem 3" />
-            <p>EDUCAÇÃO</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/governo.png" alt="Imagem 3" />
-            <p>GOVERNO MUNICIPAL</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/saude.png" alt="Imagem 3" />
-            <p>SAÚDE</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/cartografia.png" alt="Imagem 3" />
-            <p>CARTOGRAFIA</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/turismo.png" alt="Imagem 3" />
-            <p>TURISMO</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/populacao.png" alt="Imagem 3" />
-            <p>POPULAÇÃO</p>
-          </div>
-
-          <div class="areas-atuacao">
-            <img src="./Assets/mobilidade-urbana.png" alt="Imagem 3" />
-            <p>MOBILIDADE URBANA</p>
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <section id="painel-de-servicos" class="painel-de-servicos">
+    <!-- <section id="painel-de-servicos" class="painel-de-servicos">
       <h1 class="titulo-servicos">Acesse os serviços do SIGA</h1>
       <div class="servicos">
         <div class="servico">
           <img src="./Assets/icone-mapa.svg" alt="icone mapa" />
-          <p>Mapas Temáticos</p>
+          <p>Mapas <br/> Temáticos</p>
         </div>
 
         <div class="servico">
@@ -204,9 +207,10 @@
           <img src="./Assets/icone-metadados.svg" alt="icone metatados" />
           <p>Metadados</p>
         </div>
+
         <div class="servico">
           <img src="./Assets/simbolo_siga_branco.png" alt="icone sigweb" />
-          <p>SIG Web</p>
+          <p>SIGWeb</p>
         </div>
       </div>
 
@@ -215,6 +219,7 @@
         <a href="#" class="a-metadados" id="a-metadados">Baixar Metadados</a>
         <a
           href="https://siga.angra.rj.gov.br/siga/"
+          target="_blank"
           class="a-sigweb"
           id="a-sigweb"
           >Acessar o SIGA</a
@@ -237,9 +242,63 @@
         </select>
         <button id="Botao2">Download</button>
       </div>
+    </section> -->
+
+    <section id="painel-de-servicos">
+      <div class="container-servicos">
+        <div class="container-botoes-servicos">
+          <!-- <div class="botao-servico" id="botao-servico-mapa-tematico">
+            <img src="./Assets/icone-mapa.svg" alt="icone mapa" class="img-botao-servico"/>
+            <p>Mapas <br/> Temáticos</p>
+          </div>
+
+          <div class="botao-servico" id="botao-servico-downloads">
+            <img src="./Assets/icone-downloads.svg" alt="icone downloads"  class="img-botao-servico"/>
+            <p>Downloads</p>
+          </div> -->
+
+          <div class="botao-servico" id="botao-servico-metadados">
+            <img src="./Assets/icone-metadados.svg" alt="icone metatados"  class="img-botao-servico"/>
+            <h3>Metadados</h3>
+          </div>
+
+          <div class="botao-servico" id="botao-servico-sigweb">
+            <img src="./Assets/simbolo_siga_branco.png" alt="icone sigweb"  class="img-botao-servico"/>
+            <h3>SIGWeb</h3>
+          </div>
+        </div>
+        <div class="container-servicos-de-fato">
+          <!-- <div class="servico-descricao" id="descricao-servico-mapa-tematico">
+            Mapa Tematico
+          </div>
+          <div class="servico-descricao inactive" id="descricao-servico-downloads">
+            Downloads
+          </div> -->
+          <div class="servico-descricao " id="descricao-servico-metadados">
+            <p class="text-descricao-servico">Os metadados do município são disponibilizados em um catálogo no formato PDF, faça o download dos mesmos através do link</p>
+            <a 
+              class="servico-download-button" 
+              href="http://siga.angra.rj.gov.br/catalogo_metadados.pdf" 
+              target="'_blank"
+            >
+              Baixar Metadados
+          </a>
+          </div>
+          <div class="servico-descricao inactive" id="descricao-servico-sigweb">
+            <p class="text-descricao-servico">O SIGA é o Sistema de Informações Geográficas na Web de Angra dos Reis, clique no link abaixo para visualizar e manipular dados geograficos do município.</p>
+            <a 
+              class="servico-download-button" 
+              href="http://siga.angra.rj.gov.br/siga" 
+              target="'_blank"
+            >
+              Acessar o SIGA
+          </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="corpo-tecnico-bg" id="corpo-tecnico">
+    <section class="corpo-tecnico-bg" id="corpotecnico">
       <div class="corpo-tecnico">
         <h1 class="h1-corpo-tecnico">Corpo Técnico</h1>
 
@@ -248,42 +307,48 @@
             <div class="img-container">
               <img src="./Assets/andre-luis.png" alt="Imagem 3" />
             </div>
-            <h3>André<br />Luís</h3>
+            <h3>André Luís G. A. Pimenta</h3>
+            <p>Secretário de Planejamento e Parcerias</p>
           </div>
 
           <div class="funcionario-item">
             <div class="img-container">
               <img src="./Assets/matheus-fernandes.png" alt="Imagem 3" />
             </div>
-            <h3>Matheus<br />Fernandes</h3>
+            <h3>Matheus Fernandes</h3>
+            <p>Gestor do Geoprocessamento da PMAR</p>
           </div>
 
           <div class="funcionario-item">
             <div class="img-container">
               <img src="./Assets/natalia-lavra.png" alt="Imagem 3" />
             </div>
-            <h3>Natalia<br />Lavra</h3>
+            <h3>Natália Lavra</h3>
+            <p>Assistência e suporte do SIGA</p>
           </div>
 
           <div class="funcionario-item">
             <div class="img-container">
               <img src="./Assets/rafaella-lima.png" alt="Imagem 3" />
             </div>
-            <h3>Rafaella<br />Lima</h3>
+            <h3>Rafaella Lima</h3>
+            <p>Analista de Cartografia</p>
           </div>
 
           <div class="funcionario-item">
             <div class="img-container">
               <img src="./Assets/rymulo-leite.png" alt="Imagem 3" />
             </div>
-            <h3>Rymulo<br />Leite</h3>
+            <h3>Rômulo Leite</h3>
+            <p>Analista de Dados Geográficos</p>
           </div>
 
           <div class="funcionario-item">
             <div class="img-container">
               <img src="./Assets/yuri-nascimento.png" alt="Imagem 3" />
             </div>
-            <h3>Yuri<br />Nascimento</h3>
+            <h3>Yuri Nascimento</h3>
+            <p>Analista de Geoprocessamento</p>
           </div>
         </div>
       </div>
@@ -298,6 +363,7 @@
       </h2>
 
       <a
+        target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSfv_REkpAr6kRxV3cduYaUs4WKb1klV7kKEhDUFtI5pVmbE7g/viewform"
         class="a-novidades"
         >Acessar</a
@@ -326,10 +392,11 @@
       </div>
     </footer>
 
-    <script src="./Js/navbar.js"></script>
-    <script src="./Js/painelservicos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script src="./Js/painelservicos.js"></script>
+    <script src="./Js/new-painel-servicos.js"></script>
     <script>
       $(document).ready(function () {
         function formatOption(option) {
