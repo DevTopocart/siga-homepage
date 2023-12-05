@@ -15,10 +15,6 @@ nav {
   top: 0;
   background-color: #2093b5;
   z-index: 9;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 }
 
 nav ul {
@@ -30,12 +26,26 @@ nav ul {
 nav ul li {
   padding: 0.5em;
   margin: 0px 30px;
+  
+  @media screen and (max-width: 768px) {
+    width: 15%;
+    padding: 0.1em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 nav ul li a {
   color: #fff;
   font-weight: 600;
   font-size: 16px;
+
+  @media screen and (max-width: 768px) {
+    font-size: smaller;
+    text-align: center;
+  }
 }
 
 nav ul li a:hover {
