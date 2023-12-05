@@ -6,6 +6,10 @@
     <link rel="icon" href="./Assets/simbolo-siga-azul.png" />
     <title>SIGA</title>
     <link rel="stylesheet" href="./Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    />
   </head>
   <body>
     <header>
@@ -179,7 +183,6 @@
             <img src="./Assets/mobilidade-urbana.png" alt="Imagem 3" />
             <p>MOBILIDADE URBANA</p>
           </div>
-
         </div>
       </aside>
     </section>
@@ -187,16 +190,16 @@
     <section id="painel-de-servicos" class="painel-de-servicos">
       <h1 class="titulo-servicos">Acesse os serviços do SIGA</h1>
       <div class="servicos">
-        <!--
         <div class="servico">
           <img src="./Assets/icone-mapa.svg" alt="icone mapa" />
-          <p>Mapas</p>
+          <p>Mapas Temáticos</p>
         </div>
-      -->
+
         <div class="servico">
           <img src="./Assets/icone-downloads.svg" alt="icone downloads" />
           <p>Downloads</p>
         </div>
+
         <div class="servico">
           <img src="./Assets/icone-metadados.svg" alt="icone metatados" />
           <p>Metadados</p>
@@ -206,6 +209,7 @@
           <p>SIG Web</p>
         </div>
       </div>
+
       <div id="prompt">
         <p id="prompt-texto"></p>
         <a href="#" class="a-metadados" id="a-metadados">Baixar Metadados</a>
@@ -215,6 +219,23 @@
           id="a-sigweb"
           >Acessar o SIGA</a
         >
+      </div>
+
+      <div id="firstSet" style="display: none; flex-direction: column">
+        <select id="Seletor1">
+          <option value="option1">Todas as camadas</option>
+        </select>
+        <button id="Botao1">Download</button>
+      </div>
+
+      <div id="secondSet" style="display: none; flex-direction: column">
+        <select id="Seletor2">
+          <option value="option1">Todas as camadas</option>
+        </select>
+        <select id="Seletor3">
+          <option value="option1">SHP/ZIP</option>
+        </select>
+        <button id="Botao2">Download</button>
       </div>
     </section>
 
@@ -307,5 +328,30 @@
 
     <script src="./Js/navbar.js"></script>
     <script src="./Js/painelservicos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function formatOption(option) {
+          var $option = $(
+            '<span style="font-family: Poppins, sans-serif; font-style: italic;">' +
+              option.text +
+              "</span>"
+          );
+          return $option;
+        }
+
+        $("#Seletor1, #Seletor2, #Seletor3").select2({
+          templateResult: formatOption,
+          templateSelection: formatOption,
+          minimumResultsForSearch: Infinity,
+          width: "236px",
+        });
+      });
+
+      $(".servico").hover(function () {
+        $("#Seletor1, #Seletor2, #Seletor3").select2("close");
+      });
+    </script>
   </body>
 </html>
