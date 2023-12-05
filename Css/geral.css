@@ -14,7 +14,7 @@ dl {
 }
 
 body {
-  background: url("../Assets/background.png") center center no-repeat fixed;
+  background: radial-gradient(circle, rgba(0,0,0,0.8015581232492998) 52%, rgba(255,0,0,0) 97%), url("../Assets/background.png") center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

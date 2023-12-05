@@ -16,13 +16,13 @@
 
 .areas-container {
   flex: 1;
-  max-width: 1000px;
+  max-width: 90%;
   overflow: hidden;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 0.5em;
+  /* gap: 0.5em; */
 }
 
 

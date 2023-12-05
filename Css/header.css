@@ -15,6 +15,10 @@ nav {
   top: 0;
   background-color: #2093b5;
   z-index: 9;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 nav ul {
