@@ -166,6 +166,7 @@
   .select2-selection__arrow {
   height: 59px;
   padding-top: 59px;
+  padding-right: 12px;
   position: relative;
   top: 0;
 }
@@ -174,8 +175,9 @@
   .select2-selection--single
   .select2-selection__arrow
   b {
-  transform: scaleY(1.5);
+  transform: scale(1.7, 1.7);
 }
+
 
 .select2-container--default
   .select2-results__option--highlighted[aria-selected] {
