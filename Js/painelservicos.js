@@ -57,24 +57,12 @@ sigwebLink.style.display = "none";
 metadadosLink.style.display = "none";
 
 document.getElementById("Botao1").addEventListener("click", function () {
-  const selectedOption = document.getElementById("Seletor1").value;
-  const apiKey =
-    "AAAAB3NzaC1yc2EAAAADAQABAAABAQCUoDtVtIK52TpuQqPmYL+/SgndGTDG5OObi7o1lShhn3Pf1lAtRKOKrsYPJXmSv34/tuA7t+iGlNUL6h6hQr9HOtuKj1b8JpFrBIjlkcIabl/rT9ndmpDgC9a1oTsin6y6ifNvl2tPvHWPzgxDa4Z3hGGxZeFPocplN/Up0CARg1NZrbNb+1YCJeoMRka//d+bJjxO6ndgpJ7Hhukrp/dqgl/+Hfv6ID2wKE0+019cu8wmv+zVGAe7ctY8jPwaa8qGWdwF2lGPTurH2I//jjtxPQrmscR88xVNO68Jr5GY0Rfih3MR+NnVdc5GcvPkGjutHHrv4+wOz+MKUkj4xOIf";
-  const url = `https://siga.angra.rj.gov.br/portal/mapas_tematicos?option=${selectedOption}&key=${apiKey}`;
-
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error("Error:", error));
-});
-
-document.getElementById("Botao2").addEventListener("click", function () {
-  const selectedOption1 = document.getElementById("Seletor2").value;
-  const selectedOption2 = document.getElementById("Seletor3").value;
-  const apiKey = "your-api-key";
-  const url = `https://siga.angra.rj.gov.br/portal/camadas?option1=${selectedOption1}&option2=${selectedOption2}&key=${apiKey}`;
-
-  fetch(url)
+  fetch("https://siga.angra.rj.gov.br/portal/mapas_tematicos", {
+    headers: {
+      "API-key":
+        "AAAAB3NzaC1yc2EAAAADAQABAAABAQCUoDtVtIK52TpuQqPmYL+/SgndGTDG5OObi7o1lShhn3Pf1lAtRKOKrsYPJXmSv34/tuA7t+iGlNUL6h6hQr9HOtuKj1b8JpFrBIjlkcIabl/rT9ndmpDgC9a1oTsin6y6ifNvl2tPvHWPzgxDa4Z3hGGxZeFPocplN/Up0CARg1NZrbNb+1YCJeoMRka//d+bJjxO6ndgpJ7Hhukrp/dqgl/+Hfv6ID2wKE0+019cu8wmv+zVGAe7ctY8jPwaa8qGWdwF2lGPTurH2I//jjtxPQrmscR88xVNO68Jr5GY0Rfih3MR+NnVdc5GcvPkGjutHHrv4+wOz+MKUkj4xOIf",
+    },
+  })
     .then((response) => response.json())
     .then((data) => console.log(data))
     .catch((error) => console.error("Error:", error));
