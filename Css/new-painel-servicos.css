@@ -1,91 +1,136 @@
+.titulo-servicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #082631;
+  width: 100%;
+  height: 78px;
+  padding-top: 40px;
+  padding-bottom: 18px;
+  margin: 0px 0px;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: 1.25px;
+  z-index: 1;
+}
 
 .container-servicos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
 }
 
 .container-botoes-servicos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 300px;
 
-    @media screen and (max-width: 768px) {
-        flex-wrap: wrap;
-        height: auto;
-    }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    height: auto;
+  }
 }
 
 .botao-servico {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
 
-    @media screen and (max-width: 768px) {
-        width: 50%;
-        margin-bottom: 15px;
-    }
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    margin-bottom: 15px;
+  }
 }
 
 .img-botao-servico {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
 
-    @media screen {
-        width: 90px;
-        height: 90px;
-        margin-bottom: 10px;
-    }
+  @media screen {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+}
+
+.nome-servico {
+  text-align: center;
 }
 
 .container-servicos-de-fato {
-    height: calc(100vh - 300px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .servico-descricao {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .inactive {
-    display: none !important;
+  display: none !important;
 }
 
 .text-descricao-servico {
-    font-size: larger;
-    width: 50%;
-    text-align: center;
-    padding: 50px;
+  font-size: larger;
+  width: 50%;
+  text-align: center;
+  padding: 50px;
+}
+
+.text-descricao-servico-download {
+  font-size: larger;
+  text-align: center;
+  padding: 50px;
 }
 
 .servico-download-button {
-    display: flex;
-    width: 276px;
-    height: 59px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    color: white;
-    font-size: medium;
-    font-weight: 600;
-    border: none;
-    border-radius: 5px;
-    background: #2093B5;
-    margin: 15px;
-    cursor: pointer;
+  display: flex;
+  width: 276px;
+  height: 59px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: white;
+  font-family: "Poppins";
+  font-size: medium;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background: #2093b5;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.download-selector {
+  display: flex;
+  width: 276px;
+  height: 59px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Poppins";
+  font-size: medium;
+  font-weight: 400;
+}
+
+#file-name-select {
+  margin-bottom: 15px;
 }
