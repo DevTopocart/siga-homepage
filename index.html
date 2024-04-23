@@ -278,24 +278,12 @@
             <p class="text-descricao-servico-download">
               Selecione uma camada para realizar o download:
             </p>
-            <select class="download-selector" id="health-unit-select">
-              <option value="Bairros">Bairros</option>
-              <option value="I Distrito Sanitário">I Distrito Sanitário</option>
-              <option value="II Distrito Sanitário">
-                II Distrito Sanitário
-              </option>
-              <option value="III Distrito Sanitário">
-                III Distrito Sanitário
-              </option>
-              <option value="IV Distrito Sanitário">
-                IV Distrito Sanitário
-              </option>
-              <option value="V Distrito Sanitário">V Distrito Sanitário</option>
+            <select class="download-selector" id="mapa-tematico-selector">
             </select>
 
             <button
               class="servico-download-button"
-              onclick="sendRequestAndOpenTabs()"
+              onclick="downloadMapaTematico()"
             >
               Download
             </button>
@@ -308,32 +296,12 @@
               Selecione uma camada e um formato de dado para realizar o
               download:
             </p>
-            <select class="download-selector" id="file-name-select">
-              <option value="bairros">Bairros</option>
-              <option value="distritos">Distritos</option>
-              <option value="limite_municipal">Limite Municipal</option>
-              <option value="logradouros">Logradouros</option>
-              <option value="zoneamento">Zoneamento</option>
-              <option value="equipamentos_saude">Equipamentos Saúde</option>
-              <option value="escolas">Escolas</option>
-              <option value="escolas_publicas_privadas">
-                Escolas Públicas Privadas
-              </option>
-              <option value="cais">Cais</option>
-              <option value="cais_publico">Cais Público</option>
-              <option value="locais_historicos">Locais Históricos</option>
-              <option value="praia_a">Praia A</option>
-              <option value="praia_a_rural">Praia A Rural</option>
+            <select class="download-selector" id="camada-selector">
             </select>
 
-            <select class="download-selector" id="file-extension-select">
-              <option value="zip">ZIP</option>
-              <option value="dxf">DXF</option>
-              <option value="kml">KML</option>
-            </select>
             <button
               class="servico-download-button"
-              onclick="sendRequestAndOpenTab()"
+              onclick="downloadCamada()"
             >
               Download
             </button>
@@ -469,31 +437,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="./Js/navbar.js"></script>
-    <script src="./Js/painelservicos.js"></script>
     <script src="./Js/new-painel-servicos.js"></script>
-    <script>
-      $(document).ready(function () {
-        function formatOption(option) {
-          var $option = $(
-            '<span style="font-family: Poppins, sans-serif; font-style: italic;">' +
-              option.text +
-              "</span>"
-          );
-          return $option;
-        }
-
-        $("#Seletor1, #Seletor2, #Seletor3").select2({
-          templateResult: formatOption,
-          templateSelection: formatOption,
-          minimumResultsForSearch: Infinity,
-          width: "236px",
-        });
-      });
-
-      $(".servico").hover(function () {
-        $("#Seletor1, #Seletor2, #Seletor3").select2("close");
-      });
-    </script>
     <script src="./Js/animaScroll.js"></script>
   </body>
 </html>
